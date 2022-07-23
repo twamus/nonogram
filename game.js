@@ -22,7 +22,7 @@ function $(s){return document.getElementById(s);}
 function $$(s){return document.querySelectorAll(s);}
 
 Element.prototype.remove = function() {this.parentElement.removeChild(this);}
-let version="1.21";
+let version="1.22";
 let size=10;
 let puzzle,puzzlecheck;
 let lives=3;
@@ -179,7 +179,7 @@ function toolSelect(tool){
 	}
 }
 function youLose(){
-	$("lives").innerText="G A M E _ O V E R";
+	$("lives").innerText="GAME OVER";
 	let cells=document.getElementsByTagName("td");
 	for(let i=0;i<cells.length;i++){
 		cells[i].className="invalid";
